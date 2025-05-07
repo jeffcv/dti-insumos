@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ambiente
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Sessões locais
+sessions/
+
+# Build/Output
+dist/
+build/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
