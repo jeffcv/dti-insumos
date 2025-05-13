@@ -3,6 +3,7 @@ const exphbs = require('express-handlebars')
 const session = require('express-session')
 const FileStore = require('session-file-store')(session)
 const flash = require('express-flash')
+const authRoutes = require('./routes/routes')
 
 const app = express()
 
@@ -34,6 +35,9 @@ app.use(
     },
   })
 )
+
+app.use('/auth', authRoutes)
+
 
 app.use(flash())
 
